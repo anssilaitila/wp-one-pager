@@ -6,7 +6,7 @@ Tags: custom-background, custom-menu, featured-images, threaded-comments, transl
 Requires at least: 4.5
 Tested up to: 5.6
 Requires PHP: 5.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -14,9 +14,7 @@ A lightweight, simple one pager theme.
 
 == Description ==
 
-A lightweight, simple one pager theme.
-
-See also wp-onepager.com
+A lightweight, simple one pager theme. This theme is actively developed based on user feedback. For feature requests see wp-onepager.com
 
 == Installation ==
 
@@ -31,6 +29,9 @@ See also wp-onepager.com
 WP One Pager includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.5
+* Description updated
 
 = 1.0.4
 * Description and Theme URI updated
