@@ -1,0 +1,285 @@
+# Copyright (C) 2021 Tammersoft
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP One Pager 1.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/trunk\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-02-11T00:13:04+02:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.4.0\n"
+"X-Domain: wp-one-pager\n"
+
+#. Theme Name of the theme
+msgid "WP One Pager"
+msgstr ""
+
+#. Description of the theme
+msgid "A simple and lightweight one pager theme."
+msgstr ""
+
+#. Author of the theme
+msgid "Tammersoft"
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://www.tammersoft.com/"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:23
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:32
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: 404.php:50
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:20
+msgid "Footer 1 content"
+msgstr ""
+
+#: footer.php:24
+msgid "Footer 2 content"
+msgstr ""
+
+#: footer.php:28
+msgid "Footer 3 content"
+msgstr ""
+
+#: footer.php:37
+msgid "Theme"
+msgstr ""
+
+#: header.php:29
+msgid "Primary Menu"
+msgstr ""
+
+#: header.php:41
+msgid "Skip to content"
+msgstr ""
+
+#: inc/class-onepager-customizer-colors.php:10
+msgid "WP One Pager: Colors"
+msgstr ""
+
+#: inc/class-onepager-customizer-colors.php:29
+msgid "Button color 1"
+msgstr ""
+
+#: inc/class-onepager-customizer-colors.php:49
+msgid "Button color 2"
+msgstr ""
+
+#: inc/class-onepager-customizer-colors.php:69
+msgid "Link color"
+msgstr ""
+
+#: inc/class-onepager-customizer-content-area.php:10
+msgid "WP One Pager: Content area"
+msgstr ""
+
+#: inc/class-onepager-customizer-content-area.php:19
+msgid "991"
+msgstr ""
+
+#: inc/class-onepager-customizer-content-area.php:29
+msgid "Content area width in pixels"
+msgstr ""
+
+#: inc/class-onepager-customizer-content-area.php:48
+msgid "Content area background color"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:10
+msgid "WP One Pager: Footer"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:27
+msgid "Hide footer columns"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:45
+#: inc/class-onepager-customizer-hero.php:66
+msgid "Background color"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:64
+msgid "Background image"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:84
+msgid "Footer 1"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:104
+msgid "Footer 2"
+msgstr ""
+
+#: inc/class-onepager-customizer-footer.php:125
+msgid "Footer 3"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:10
+msgid "WP One Pager: Hero"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:27
+msgid "Hero title"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:46
+msgid "Description"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:86
+msgid "Text color"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:104
+msgid "Button 1 title"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:121
+msgid "Button 1 link"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:137
+msgid "Button 2 title"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:154
+msgid "Button 2 link"
+msgstr ""
+
+#: inc/class-onepager-customizer-nav.php:10
+msgid "WP One Pager: Navigation"
+msgstr ""
+
+#: inc/class-onepager-customizer-nav.php:27
+msgid "Hide menu"
+msgstr ""
+
+#: inc/_u/class-onepager-underscores.php:42
+msgid "Primary"
+msgstr ""
+
+#: inc/_u/class-onepager-underscores.php:115
+msgid "Sidebar"
+msgstr ""
+
+#: inc/_u/class-onepager-underscores.php:117
+msgid "Add widgets here."
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/_u/template-tags.php:30
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: inc/_u/template-tags.php:46
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/_u/template-tags.php:63
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/_u/template-tags.php:66
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/_u/template-tags.php:70
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/_u/template-tags.php:73
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: post title
+#: inc/_u/template-tags.php:83
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/_u/template-tags.php:100
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr ""
+
+#: single.php:29
+msgid "Previous:"
+msgstr ""
+
+#: single.php:30
+msgid "Next:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:30
+#: template-parts/content.php:53
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
