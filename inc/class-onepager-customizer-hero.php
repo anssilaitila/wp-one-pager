@@ -29,6 +29,25 @@ class OnepagerCustomizerHero {
         'type' => 'text',
       )
     );
+
+    $wp_customize->add_setting(
+      'hero-height',
+      array(
+        'default' => '',
+        array(
+          'sanitize_callback' => 'absint',
+        )
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-height',
+      array(
+        'label' => __('Hero container height in pixels', 'wp-one-pager'),
+        'section' => 'hero',
+        'type' => 'text',
+      )
+    );
     
     $wp_customize->add_setting(
       'hero-description',
@@ -152,6 +171,138 @@ class OnepagerCustomizerHero {
       array(
         'type' => 'dropdown-pages',
         'label' => __('Button 2 link', 'wp-one-pager'),
+        'section' => 'hero',
+      )
+    );
+
+    $wp_customize->add_setting(
+      'hero-button-3-title',
+      array(
+        'default' => '',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-3-title',
+      array(
+        'label' => __('Button 3 title', 'wp-one-pager'),
+        'section' => 'hero',
+        'type' => 'text',
+      )
+    );
+    
+    $wp_customize->add_setting(
+      'hero-button-3-page',
+      array(
+        'sanitize_callback' => 'absint',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-3-page',
+      array(
+        'type' => 'dropdown-pages',
+        'label' => __('Button 3 link', 'wp-one-pager'),
+        'section' => 'hero',
+      )
+    );
+
+    $wp_customize->add_setting(
+      'hero-button-4-title',
+      array(
+        'default' => '',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-4-title',
+      array(
+        'label' => __('Button 4 title', 'wp-one-pager'),
+        'section' => 'hero',
+        'type' => 'text',
+      )
+    );
+    
+    $wp_customize->add_setting(
+      'hero-button-4-page',
+      array(
+        'sanitize_callback' => 'absint',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-4-page',
+      array(
+        'type' => 'dropdown-pages',
+        'label' => __('Button 4 link', 'wp-one-pager'),
+        'section' => 'hero',
+      )
+    );
+
+    $wp_customize->add_setting(
+      'hero-button-5-title',
+      array(
+        'default' => '',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-5-title',
+      array(
+        'label' => __('Button 5 title', 'wp-one-pager'),
+        'section' => 'hero',
+        'type' => 'text',
+      )
+    );
+    
+    $wp_customize->add_setting(
+      'hero-button-5-page',
+      array(
+        'sanitize_callback' => 'absint',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-5-page',
+      array(
+        'type' => 'dropdown-pages',
+        'label' => __('Button 5 link', 'wp-one-pager'),
+        'section' => 'hero',
+      )
+    );
+
+    $wp_customize->add_setting(
+      'hero-button-6-title',
+      array(
+        'default' => '',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-6-title',
+      array(
+        'label' => __('Button 6 title', 'wp-one-pager'),
+        'section' => 'hero',
+        'type' => 'text',
+      )
+    );
+    
+    $wp_customize->add_setting(
+      'hero-button-6-page',
+      array(
+        'sanitize_callback' => 'absint',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-6-page',
+      array(
+        'type' => 'dropdown-pages',
+        'label' => __('Button 6 link', 'wp-one-pager'),
         'section' => 'hero',
       )
     );

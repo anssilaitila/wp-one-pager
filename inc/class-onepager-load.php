@@ -10,12 +10,16 @@ class OnepagerLoad {
 
   public function public_scripts_and_styles() {
 
-    wp_enqueue_style('wp-one-pager-style-public', get_stylesheet_directory_uri() . '/dist/css/p.min.css', array(), 1, 'all');
+    wp_enqueue_style('wp-one-pager-style-public', get_stylesheet_directory_uri() . '/dist/css/p.css', array(), 1, 'all');
     wp_enqueue_style('wp-one-pager-google-fonts', 'https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap', false); 
 
   }
 
   public function admin_scripts_and_styles($hook) {
+
+    if ($hook == 'appearance_page_wp-one-pager-theme-options') {
+      wp_enqueue_style('wp-one-pager-style-admin', get_stylesheet_directory_uri() . '/dist/css/a.css', array(), 1, 'all');
+    }
   
     if ($hook != 'widgets.php') {
       return;
@@ -83,6 +87,13 @@ class OnepagerLoad {
     // button type 2
     $out .= 'body a.onepager-button-v2 { border: 2px solid ' . $button_color_1 . '; color: ' . $hero_text_color . '; }';
     $out .= 'body a.onepager-button-v2:hover { background-color: ' . $button_color_2 . '; border: 2px solid ' . $button_color_2 . '; color: ' . $button_color_1 . '; }';
+
+    if ($hero_height = get_theme_mod('hero-height')) {
+      $out .= '@media (min-width: 501px) {';
+      $out .= '.hero-container.hero-container-with-logo { height: ' . esc_attr($hero_height) . 'px; }';
+      $out .= '.hero-container { height: ' . esc_attr($hero_height) . 'px; }';
+      $out .= '}';
+    }
 
     if (get_theme_mod('hero-background-color')) {
       $hero_background_color = esc_attr(get_theme_mod('hero-background-color'));

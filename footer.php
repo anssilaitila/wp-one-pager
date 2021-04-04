@@ -34,7 +34,7 @@
 <div class="site-footer-bottom">
 
 	<div class="site-info">
-		<?php echo __('Theme', 'wp-one-pager') ?>: WP One Pager
+		<?php echo esc_html__('Theme', 'wp-one-pager') ?>: <a href="https://wordpress.org/themes/wp-one-pager/" target="_blank">WP One Pager</a>
 	</div><!-- .site-info -->
 		
 </div>

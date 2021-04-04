@@ -58,6 +58,10 @@ $logo_exists = isset($image[0]) ? 1 : 0;
 
 		<?php $button_1_id = intval( get_theme_mod( 'hero-button-1-page', 0 ) ) ?>
 		<?php $button_2_id = intval( get_theme_mod( 'hero-button-2-page', 0 ) ) ?>
+    <?php $button_3_id = intval( get_theme_mod( 'hero-button-3-page', 0 ) ) ?>
+    <?php $button_4_id = intval( get_theme_mod( 'hero-button-4-page', 0 ) ) ?>
+    <?php $button_5_id = intval( get_theme_mod( 'hero-button-5-page', 0 ) ) ?>
+    <?php $button_6_id = intval( get_theme_mod( 'hero-button-6-page', 0 ) ) ?>
 
 		<h1><?php echo OnepagerHelpers::getThemeMod('hero-title', get_bloginfo('name')); ?></h1>
 		<p><?php echo OnepagerHelpers::getThemeMod('hero-description', '', 'html'); ?></p>
@@ -71,6 +75,27 @@ $logo_exists = isset($image[0]) ? 1 : 0;
 			<?php $button_2_url = $button_2_id ? esc_url(get_permalink($button_2_id)) : '' ?>
 			<a href="<?php echo $button_2_url; ?>" class="onepager-button-v2"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-2-title' ); ?></a>
 		<?php endif; ?>
+
+    <?php if (get_theme_mod('hero-button-3-title')): ?>
+      <?php $button_3_url = $button_3_id ? esc_url(get_permalink($button_3_id)) : '' ?>
+      <a href="<?php echo $button_3_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-3-title' ); ?></a>
+    <?php endif; ?>
+    
+    <?php if (get_theme_mod('hero-button-4-title')): ?>
+      <?php $button_4_url = $button_4_id ? esc_url(get_permalink($button_4_id)) : '' ?>
+      <a href="<?php echo $button_4_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-4-title' ); ?></a>
+    <?php endif; ?>
+    
+    <?php if (get_theme_mod('hero-button-5-title')): ?>
+      <?php $button_5_url = $button_5_id ? esc_url(get_permalink($button_5_id)) : '' ?>
+      <a href="<?php echo $button_5_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-5-title' ); ?></a>
+    <?php endif; ?>
+
+    <?php if (get_theme_mod('hero-button-6-title')): ?>
+      <?php $button_6_url = $button_6_id ? esc_url(get_permalink($button_6_id)) : '' ?>
+      <a href="<?php echo $button_6_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-6-title' ); ?></a>
+    <?php endif; ?>
+
 	</div>
 	
 </div>

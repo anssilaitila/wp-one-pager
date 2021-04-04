@@ -1,20 +1,20 @@
 === WP One Pager ===
 
 Contributors: anssilaitila
-Tags: custom-background, custom-menu, featured-images, threaded-comments, translation-ready, blog, custom-logo, custom-colors, theme-options
+Tags: blog, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, theme-options, threaded-comments, translation-ready, accessibility-ready, wide-blocks, block-styles, footer-widgets, portfolio, left-sidebar, right-sidebar, block-patterns, custom-logo, e-commerce, rtl-language-support, grid-layout, flexible-header, full-width-template, sticky-post
 
 Requires at least: 4.5
 Tested up to: 5.7
 Requires PHP: 5.6
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
-A lightweight, simple one pager theme. This theme is actively developed based on user feedback. For feature requests see wp-onepager.com
+WP One Pager is a lightweight, simple one pager theme. It is fully responsive, fast loading and SEO friendly. You can use Gutenberg, classic editor or any page builder to edit the content (including Elementor, Beaver Builder, Brizy, Divi, Visual Composer and SiteOrigin). WP One Pager is also WooCommerce ready, RTL and translation ready. No need to look any further. This is the best theme for you! For feature requests see wp-onepager.com
 
 == Description ==
 
-A lightweight, simple one pager theme. This theme is actively developed based on user feedback. For feature requests see wp-onepager.com
+WP One Pager is a lightweight, simple one pager theme. It is fully responsive, fast loading and SEO friendly. You can use Gutenberg, classic editor or any page builder to edit the content (including Elementor, Beaver Builder, Brizy, Divi, Visual Composer and SiteOrigin). WP One Pager is also WooCommerce ready, RTL and translation ready. No need to look any further. This is the best theme for you! For feature requests see wp-onepager.com
 
 == Installation ==
 
@@ -29,6 +29,10 @@ A lightweight, simple one pager theme. This theme is actively developed based on
 WP One Pager includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.8 - 2021-04-04 =
+* 4 new buttons added to header (see Customizer / Hero)
+* New setting for Customizer: "Hero container height in pixels"
 
 = 1.0.7 - 2021-03-08 =
 * Tested up to WP 5.7
