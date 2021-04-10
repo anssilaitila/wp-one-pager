@@ -110,6 +110,28 @@ class OnepagerCustomizerHero {
     );
 
     $wp_customize->add_setting(
+      'hero-button-style',
+      array(
+        'default' => '',
+        'sanitize_callback' => 'wp_filter_nohtml_kses',
+      )
+    );
+    
+    $wp_customize->add_control(
+      'hero-button-style',
+      array(
+        'label' => __('Style for all buttons', 'wp-one-pager'),
+        'section' => 'hero',
+        'type'    => 'select',
+        'choices' => array(
+          '' => '',
+          'button-1' => 'Button 1',
+          'button-2' => 'Button 2',
+        )
+      )
+    );
+
+    $wp_customize->add_setting(
       'hero-button-1-title',
       array(
         'default' => '',

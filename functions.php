@@ -9,7 +9,7 @@
 
 if ( ! defined( 'WP_ONEPAGER_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'WP_ONEPAGER_VERSION', '1.0.8' );
+	define( 'WP_ONEPAGER_VERSION', '1.0.11' );
 }
 
 // Core Constants.
@@ -38,6 +38,7 @@ final class WP_Onepager {
 		$plugin_underscores = new OnepagerUnderscores();
 		$plugin_customizer = new OnepagerCustomizer();
 		$plugin_customizer_nav = new OnepagerCustomizerNav();
+    $plugin_customizer_single_post = new OnepagerCustomizerSinglePost();
 		$plugin_customizer_colors = new OnepagerCustomizerColors();
 		$plugin_customizer_hero = new OnepagerCustomizerHero();
 		$plugin_customizer_content_area = new OnepagerCustomizerContentArea();
@@ -55,9 +56,11 @@ final class WP_Onepager {
 		add_action( 'wp_enqueue_scripts', [$plugin_load, 'public_inline_styles'] );
 		add_action( 'admin_enqueue_scripts', [$plugin_load, 'admin_scripts_and_styles'] );
 		add_action( 'admin_menu', [$plugin_customizer, 'add_customizer_menu_item'] );
+    add_action( 'admin_menu', [$plugin_load, 'remove_menu_items'] );
 		add_action( 'customize_register', 'wp_onepager_register_custom_classes' );
 		add_action( 'customize_register', [$plugin_customizer, 'remove_default_controls'] );
 		add_action( 'customize_register', [$plugin_customizer_nav, 'customizer_nav'] );
+    add_action( 'customize_register', [$plugin_customizer_single_post, 'customizer_single_post'] );
 		add_action( 'customize_register', [$plugin_customizer_colors, 'customizer_colors'] );
 		add_action( 'customize_register', [$plugin_customizer_hero, 'customizer_hero'] );
 		add_action( 'customize_register', [$plugin_customizer_content_area, 'customizer_content_area'] );
@@ -95,6 +98,7 @@ final class WP_Onepager {
 		require_once $dir . 'class-onepager-helpers.php';
 		require_once $dir . 'class-onepager-customizer.php';
 		require_once $dir . 'class-onepager-customizer-nav.php';
+    require_once $dir . 'class-onepager-customizer-single-post.php';
 		require_once $dir . 'class-onepager-customizer-colors.php';
 		require_once $dir . 'class-onepager-customizer-hero.php';
 		require_once $dir . 'class-onepager-customizer-content-area.php';

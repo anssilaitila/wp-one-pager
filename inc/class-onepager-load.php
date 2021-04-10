@@ -8,6 +8,23 @@ class OnepagerLoad {
 
   }
 
+  public function remove_menu_items() {
+    
+    global $submenu;
+    
+    if (isset($submenu['themes.php']) && is_array($submenu['themes.php'])) {
+
+      foreach ($submenu['themes.php'] as $index => $menu_item) {
+
+        if (isset($menu_item[2]) && in_array($menu_item[2], array('customize.php?return=%2Fwp-admin%2Fthemes.php&#038;autofocus%5Bcontrol%5D=header_image', 'customize.php?return=%2Fwp-admin%2Fthemes.php&#038;autofocus%5Bcontrol%5D=background_image'))) {
+          unset($submenu['themes.php'][$index]);
+        }
+
+      }
+    }
+
+  }
+
   public function public_scripts_and_styles() {
 
     wp_enqueue_style('wp-one-pager-style-public', get_stylesheet_directory_uri() . '/dist/css/p.css', array(), 1, 'all');
@@ -87,6 +104,10 @@ class OnepagerLoad {
     // button type 2
     $out .= 'body a.onepager-button-v2 { border: 2px solid ' . $button_color_1 . '; color: ' . $hero_text_color . '; }';
     $out .= 'body a.onepager-button-v2:hover { background-color: ' . $button_color_2 . '; border: 2px solid ' . $button_color_2 . '; color: ' . $button_color_1 . '; }';
+
+    if (get_theme_mod('single-post-hide-logged-in-as')) {
+      $out .= '.single-post .logged-in-as { display: none; }';
+    }
 
     if ($hero_height = get_theme_mod('hero-height')) {
       $out .= '@media (min-width: 501px) {';

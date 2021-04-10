@@ -79,7 +79,7 @@ function wp_onepager_theme_option_page() {
   $text = sprintf(
     wp_kses(
       /* translators: %s: links to plugins at wp plugin repository */
-      __('You may also want to try the plugins we have made: <a href="%1$s" target="_blank">Shared Files</a> (for listing downloadable files on your site) and <a href="%2$s" target="_blank">Contact List</a> (for listing contact information).', 'wp-one-pager'),
+      __('You may also want to try the plugins we have made: <a href="%1$s" target="_blank">Shared Files</a> (for listing downloadable files on your site) and <a href="%2$s" target="_blank">Contact List</a> (for listing contacts and their contact information).', 'wp-one-pager'),
       array('a' => array('href' => array(), 'target' => array()))
     ),
     esc_url($url_1),

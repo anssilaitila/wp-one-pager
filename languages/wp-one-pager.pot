@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: WP One Pager 1.0.8\n"
+"Project-Id-Version: WP One Pager 1.0.11\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/wp-one-pager\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-04-04T13:12:45+03:00\n"
+"POT-Creation-Date: 2021-04-10T16:25:44+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: wp-one-pager\n"
@@ -163,50 +163,54 @@ msgid "Text color"
 msgstr ""
 
 #: inc/class-onepager-customizer-hero.php:123
+msgid "Style for all buttons"
+msgstr ""
+
+#: inc/class-onepager-customizer-hero.php:145
 msgid "Button 1 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:140
+#: inc/class-onepager-customizer-hero.php:162
 msgid "Button 1 link"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:156
+#: inc/class-onepager-customizer-hero.php:178
 msgid "Button 2 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:173
+#: inc/class-onepager-customizer-hero.php:195
 msgid "Button 2 link"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:189
+#: inc/class-onepager-customizer-hero.php:211
 msgid "Button 3 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:206
+#: inc/class-onepager-customizer-hero.php:228
 msgid "Button 3 link"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:222
+#: inc/class-onepager-customizer-hero.php:244
 msgid "Button 4 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:239
+#: inc/class-onepager-customizer-hero.php:261
 msgid "Button 4 link"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:255
+#: inc/class-onepager-customizer-hero.php:277
 msgid "Button 5 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:272
+#: inc/class-onepager-customizer-hero.php:294
 msgid "Button 5 link"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:288
+#: inc/class-onepager-customizer-hero.php:310
 msgid "Button 6 title"
 msgstr ""
 
-#: inc/class-onepager-customizer-hero.php:305
+#: inc/class-onepager-customizer-hero.php:327
 msgid "Button 6 link"
 msgstr ""
 
@@ -216,6 +220,18 @@ msgstr ""
 
 #: inc/class-onepager-customizer-nav.php:27
 msgid "Hide menu"
+msgstr ""
+
+#: inc/class-onepager-customizer-single-post.php:10
+msgid "WP One Pager: Single Post"
+msgstr ""
+
+#: inc/class-onepager-customizer-single-post.php:27
+msgid "Hide \"posted on / posted by\" -section"
+msgstr ""
+
+#: inc/class-onepager-customizer-single-post.php:43
+msgid "Hide \"logged in as\" -section"
 msgstr ""
 
 #: inc/class-onepager-customizer.php:34
@@ -255,7 +271,7 @@ msgstr ""
 
 #. translators: %s: links to plugins at wp plugin repository
 #: inc/class-onepager-customizer.php:82
-msgid "You may also want to try the plugins we have made: <a href=\"%1$s\" target=\"_blank\">Shared Files</a> (for listing downloadable files on your site) and <a href=\"%2$s\" target=\"_blank\">Contact List</a> (for listing contact information)."
+msgid "You may also want to try the plugins we have made: <a href=\"%1$s\" target=\"_blank\">Shared Files</a> (for listing downloadable files on your site) and <a href=\"%2$s\" target=\"_blank\">Contact List</a> (for listing contacts and their contact information)."
 msgstr ""
 
 #. translators: %s: link to author's company site
@@ -323,11 +339,11 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: single.php:29
+#: single.php:28
 msgid "Previous:"
 msgstr ""
 
-#: single.php:30
+#: single.php:29
 msgid "Next:"
 msgstr ""
 
@@ -349,11 +365,11 @@ msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searc
 msgstr ""
 
 #: template-parts/content-page.php:30
-#: template-parts/content.php:53
+#: template-parts/content.php:55
 msgid "Pages:"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:40
+#: template-parts/content.php:42
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""

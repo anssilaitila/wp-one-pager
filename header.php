@@ -66,34 +66,68 @@ $logo_exists = isset($image[0]) ? 1 : 0;
 		<h1><?php echo OnepagerHelpers::getThemeMod('hero-title', get_bloginfo('name')); ?></h1>
 		<p><?php echo OnepagerHelpers::getThemeMod('hero-description', '', 'html'); ?></p>
 
+    <?php $button_class_all = '' ?>
+
+    <?php if ($button_style = get_theme_mod('hero-button-style')): ?>
+      
+      <?php if ($button_style == 'button-1'): ?>
+        <?php $button_class_all = 'onepager-button' ?>
+      <?php elseif ($button_style == 'button-2'): ?>
+        <?php $button_class_all = 'onepager-button-v2' ?>
+      <?php endif; ?>
+      
+    <?php endif; ?>
+
 		<?php if (get_theme_mod('hero-button-1-title')): ?>
+    
+      <?php $button_class = 'onepager-button' ?>
+      
+      <?php if ($button_class_all): ?>
+        <?php $button_class = $button_class_all ?>
+      <?php endif; ?>
+    
 			<?php $button_1_url = $button_1_id ? esc_url(get_permalink($button_1_id)) : '' ?>
-			<a href="<?php echo $button_1_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-1-title' ); ?></a>
+			<a href="<?php echo $button_1_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-1-title' ); ?></a>
+
 		<?php endif; ?>
 		
 		<?php if (get_theme_mod('hero-button-2-title')): ?>
+
+      <?php $button_class = 'onepager-button-v2' ?>
+      
+      <?php if ($button_class_all): ?>
+        <?php $button_class = $button_class_all ?>
+      <?php endif; ?>
+
 			<?php $button_2_url = $button_2_id ? esc_url(get_permalink($button_2_id)) : '' ?>
-			<a href="<?php echo $button_2_url; ?>" class="onepager-button-v2"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-2-title' ); ?></a>
+			<a href="<?php echo $button_2_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-2-title' ); ?></a>
+      
 		<?php endif; ?>
+
+    <?php $button_class = 'onepager-button' ?>
+    
+    <?php if ($button_class_all): ?>
+      <?php $button_class = $button_class_all ?>
+    <?php endif; ?>
 
     <?php if (get_theme_mod('hero-button-3-title')): ?>
       <?php $button_3_url = $button_3_id ? esc_url(get_permalink($button_3_id)) : '' ?>
-      <a href="<?php echo $button_3_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-3-title' ); ?></a>
+      <a href="<?php echo $button_3_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-3-title' ); ?></a>
     <?php endif; ?>
     
     <?php if (get_theme_mod('hero-button-4-title')): ?>
       <?php $button_4_url = $button_4_id ? esc_url(get_permalink($button_4_id)) : '' ?>
-      <a href="<?php echo $button_4_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-4-title' ); ?></a>
+      <a href="<?php echo $button_4_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-4-title' ); ?></a>
     <?php endif; ?>
     
     <?php if (get_theme_mod('hero-button-5-title')): ?>
       <?php $button_5_url = $button_5_id ? esc_url(get_permalink($button_5_id)) : '' ?>
-      <a href="<?php echo $button_5_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-5-title' ); ?></a>
+      <a href="<?php echo $button_5_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-5-title' ); ?></a>
     <?php endif; ?>
 
     <?php if (get_theme_mod('hero-button-6-title')): ?>
       <?php $button_6_url = $button_6_id ? esc_url(get_permalink($button_6_id)) : '' ?>
-      <a href="<?php echo $button_6_url; ?>" class="onepager-button"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-6-title' ); ?></a>
+      <a href="<?php echo $button_6_url; ?>" class="<?php echo $button_class ?>"><?php echo OnepagerHelpers::getThemeMod( 'hero-button-6-title' ); ?></a>
     <?php endif; ?>
 
 	</div>

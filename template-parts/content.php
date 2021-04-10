@@ -11,15 +11,16 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
+    ?>
 
-		if ( 'post' === get_post_type() ) :
-			?>
+		<?php if ( get_post_type() === 'post' && !get_theme_mod('single-post-hide-posted-on') ): ?>
 			<div class="entry-meta">
 				<?php
 				wp_one_pager_posted_on();
@@ -27,6 +28,7 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+
 	</header><!-- .entry-header -->
 
 	<?php wp_one_pager_post_thumbnail(); ?>
@@ -60,4 +62,5 @@
 	<footer class="entry-footer">
 		<?php wp_one_pager_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
 </article><!-- #post-<?php the_ID(); ?> -->
