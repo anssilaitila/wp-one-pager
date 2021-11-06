@@ -17,15 +17,15 @@
 	<footer id="colophon" class="site-footer">
 	
 		<div class="footer-1">
-			<?php echo OnepagerHelpers::getThemeMod( 'footer-1' ); ?>
+			<?php echo OnepagerHelpers::getThemeMod( 'footer-1', '', 'html' ); ?>
 		</div>
 		
 		<div class="footer-2">
-			<?php echo OnepagerHelpers::getThemeMod( 'footer-2' ); ?>
+			<?php echo OnepagerHelpers::getThemeMod( 'footer-2', '', 'html' ); ?>
 		</div>
 		
 		<div class="footer-3">
-			<?php echo OnepagerHelpers::getThemeMod( 'footer-3' ); ?>
+			<?php echo OnepagerHelpers::getThemeMod( 'footer-3', '', 'html' ); ?>
 		</div>
 	
 	</footer><!-- #colophon -->

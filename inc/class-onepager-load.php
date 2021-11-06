@@ -11,18 +11,17 @@ class OnepagerLoad {
   public function remove_menu_items() {
     
     global $submenu;
-    
-    if (isset($submenu['themes.php']) && is_array($submenu['themes.php'])) {
 
-      foreach ($submenu['themes.php'] as $index => $menu_item) {
-
-        if (isset($menu_item[2]) && in_array($menu_item[2], array('customize.php?return=%2Fwp-admin%2Fthemes.php&#038;autofocus%5Bcontrol%5D=header_image', 'customize.php?return=%2Fwp-admin%2Fthemes.php&#038;autofocus%5Bcontrol%5D=background_image'))) {
-          unset($submenu['themes.php'][$index]);
-        }
-
-      }
+    if (isset($submenu['themes.php'][15][2]) && strpos($submenu['themes.php'][15][2], 'control%5D=header_image') !== false) {
+      // Remove "Header" from Appearance menu
+      unset($submenu['themes.php'][15]);
     }
 
+    if (isset($submenu['themes.php'][20][2]) && strpos($submenu['themes.php'][20][2], 'control%5D=background_image') !== false) {
+      // Remove "Background" from Appearance menu
+      unset($submenu['themes.php'][20]);
+    }
+    
   }
 
   public function public_scripts_and_styles() {

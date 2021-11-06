@@ -2,9 +2,9 @@
 Contributors: anssilaitila
 Tags: blog, entertainment, photography, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, theme-options, translation-ready
 Requires at least: 5.3
-Tested up to: 5.7
+Tested up to: 5.8
 Requires PHP: 5.6
-Stable tag: 1.0.11
+Stable tag: 1.0.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,10 @@ WP One Pager is a lightweight, simple one pager theme. It is fully responsive, f
 WP One Pager includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.12 - 2021-11-06 =
+* Fix: top/bottom margin added between hero buttons
+* Fix: html content can now be normally added to footer columns
 
 = 1.0.11 - 2021-04-10 =
 * Theme tags updated
