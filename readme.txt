@@ -2,15 +2,15 @@
 Contributors: anssilaitila
 Tags: blog, entertainment, photography, one-column, two-columns, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, theme-options, translation-ready
 Requires at least: 5.3
-Tested up to: 5.8
+Tested up to: 6.1
 Requires PHP: 5.6
-Stable tag: 1.0.12
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-WP One Pager is a lightweight, simple one pager theme. It is fully responsive, fast loading and SEO friendly. You can use Gutenberg, classic editor or any page builder to edit the content (including Elementor, Beaver Builder, Brizy, Divi, Visual Composer and SiteOrigin). WP One Pager is also WooCommerce ready, RTL and translation ready. No need to look any further. This is the best theme for you! For feature requests see wp-onepager.com
+WP One Pager is a lightweight, simple one pager theme. It is fully responsive, fast loading and SEO friendly. You can use Gutenberg, classic editor or any page builder to edit the content (including Elementor, Beaver Builder, Brizy, Divi, Visual Composer and SiteOrigin). WP One Pager is also WooCommerce ready, RTL and translation ready. No need to look any further. This is the best theme for you! For feature requests see onepagerwp.com
 
 == Installation ==
 
@@ -25,6 +25,9 @@ WP One Pager is a lightweight, simple one pager theme. It is fully responsive, f
 WP One Pager includes support for WooCommerce and for Infinite Scroll in Jetpack.
 
 == Changelog ==
+
+= 1.0.13 - 2023-02-18 =
+* New setting: Hide sidebar from single post (see Customizer / WP One Pager: Single Post)
 
 = 1.0.12 - 2021-11-06 =
 * Fix: top/bottom margin added between hero buttons

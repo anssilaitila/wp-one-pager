@@ -108,6 +108,11 @@ class OnepagerLoad {
       $out .= '.single-post .logged-in-as { display: none; }';
     }
 
+    if (get_theme_mod('single-post-hide-sidebar')) {
+      $out .= '.single-post .widget-area { display: none; }';
+      $out .= '.single-post .blog-content-container { grid-template-columns: auto; }';
+    }
+
     if ($hero_height = get_theme_mod('hero-height')) {
       $out .= '@media (min-width: 501px) {';
       $out .= '.hero-container.hero-container-with-logo { height: ' . esc_attr($hero_height) . 'px; }';

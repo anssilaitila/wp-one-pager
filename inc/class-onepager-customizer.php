@@ -48,11 +48,11 @@ function wp_onepager_theme_option_page() {
 
   echo '<h2>' . esc_html__('Contact the author', 'wp-one-pager') . '</h2>';
 
-  $url = 'https://www.wp-onepager.com/';
+  $url = 'https://www.onepagerwp.com/';
   $text = sprintf(
     wp_kses(
-      /* translators: %s: link to wp-onepager.com */
-      __('If you have a feature request, you may contact the author at <a href="%s" target="_blank">wp-onepager.com</a>. Any kind of feedback is welcome.', 'wp-one-pager'),
+      /* translators: %s: link to onepagerwp.com */
+      __('If you have a feature request, you may contact the author at <a href="%s" target="_blank">onepagerwp.com</a>. Any kind of feedback is welcome.', 'wp-one-pager'),
       array('a' => array('href' => array(), 'target' => array()))
     ),
     esc_url($url) 

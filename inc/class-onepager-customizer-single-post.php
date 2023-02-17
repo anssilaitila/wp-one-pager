@@ -45,6 +45,22 @@ class OnepagerCustomizerSinglePost {
       )
     );
 
+    $wp_customize->add_setting(
+      'single-post-hide-sidebar',
+      array(
+        'sanitize_callback' => ['OnepagerCustomizer', 'wpop_sanitize_checkbox'],
+      )
+    );
+    
+    $wp_customize->add_control(
+      'single-post-hide-sidebar',
+      array(
+        'type' => 'checkbox',
+        'label' => __('Hide sidebar', 'wp-one-pager'),
+        'section' => 'single-post',
+      )
+    );
+
   }
 
 }
